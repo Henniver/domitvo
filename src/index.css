@@ -1,3 +1,12 @@
+
+/* Tailwind
+See https://www.meidev.co/blog/visual-studio-code-css-linting-with-tailwind/
+Or  https://stackoverflow.com/a/63784195/6608855
+To fix linter */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
