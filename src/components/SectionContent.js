@@ -1,19 +1,32 @@
-export default function SectionContent({textSide, text, title}) {
+import React from "react";
+import Button from "./Button";
+
+export default function SectionContent({textSide, text, img, extraClasses, showBtn}) {
     
 
     const textBox = 
-        <div className="flex flex-col justify-center items-center m-10 text-justify">
-            <h3>{title}</h3>
-            <p>{text}</p>
+        <div className="flex flex-col justify-center items-center text-justify w-40vw px-10">
+            {
+                text.map( (par, idx) => (
+                    <p key={`${par}-${idx}`}>
+                        {par}
+                    </p>
+                ))
+            }
+            {
+                showBtn ? <Button href={"/"} text={"Bestel hier"}></Button> : null
+
+            }
+       
         </div>
 
     return(
-        <div className="flex flex-row">
+        <div className={`flex flex-row justify-between ${extraClasses}`}>
             {textSide === "left" ? textBox : null}
             <img 
-                src="https://picsum.photos/600/400" 
+                src={img}
                 alt={text.title}
-                className="mx-20 my-10 rounded-xl"
+                className="rounded-xl w-50vw"
             ></img>
             {textSide === "right" ? textBox : null}
         </div>

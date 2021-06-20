@@ -1,15 +1,25 @@
 import Button from "./Button";
+import banner from "../banner2.jpeg";
 
-export default function Banner() {
+export default function Banner({text}) {
     return(
-    <div className="bg-cover bg-center py-36 " 
-        style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png)"}}
+    <div className="banner bg-cover bg-top flex justify-center items-start" 
+        style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(${banner})`}}
     >
-        <div className="container text-left px-24 h-screen">
-            <h1 className="m-0 text-white drop-shadow-sm text-3xl font-bold "><strong>DE OUDE MARKT IS TERUG VAN ONS!</strong></h1>
-            <p className="text-xl text-white text-opacity-70 drop-shadow-sm mb-4">Het is niet alleen een vrolijke uitroep, het is vanaf nu ook een nieuw bier. En wat voor één: een lekkere ambachtelijke tripel van 9° 
-            waarmee je ook nog eens een goed doel steunt. Je leest het goed: genieten van een heerlijk biertje en weten dat je daarmee kinderen in Guatemala 
-            een kans geeft op beter onderwijs, waar wacht je nog op?</p>
+        <div className="container text-left px-5vw py-16">
+            <h1 className="m-0 text-white text-4xl font-extrabold mb-6 "><strong>DE OUDE MARKT IS TERUG VAN ONS!</strong></h1>
+            <div className="mb-10">
+                {
+                    text.map( par => (
+                        <p 
+                            className="text-xl text-white mb-4 leading-relaxed"
+                            key={`${par.slice(0,3)}`}
+                        >
+                            {`${par}`}
+                        </p>
+                    ))
+                }
+            </div>
             <Button href={"/"} text={"Lees Meer"}/>
             <Button href={"/"} text={"Bestel hier"}/>
         </div>
