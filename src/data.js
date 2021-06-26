@@ -28,11 +28,11 @@ export const text = {
         ["De opbrengsten van de verkoop van het bier gaat integraal naar vzw Ajpopoli. (hyperlink naar www.ajpopoli.com )"],
         [`Ajpopoli is een Belgische organisatie die kwaliteitsvol onderwijs biedt aan ongeveer 300 kansarme Mayakinderen in het bergdorp San Juan Comalapa in Guatemala. Het doel is hen uit de armoede en onderdrukking te halen via onderwijs en ze een goede basis te geven voor eventuele verdere studies of een betere voorbereiding op de arbeidsmarkt. Er wordt nadruk gelegd op gendergelijkheid. De school wordt geleid door Mayaleerkrachten en biedt ook medische en sociale steun aan de gezinnen van de leerlingen die in armoede leven`],
         [`Ajpopoli zorgt voor de volledige financiering van deze school en haar 24 personeelsleden (ie. lonen, infrastructuur en onderhoud). De school verschaft onderwijs tot en met het derde middelbaar. Via een sociaal fonds biedt de school ook hulp bij noodsituaties in de gezinnen van de leerlingen (ie. medische kosten, voedsel, kleding, schoenen, schoolmateriaal ...).`],
-        [<strong>Hoe kan jij Ajpopoli helpen?</strong>],
-        [<strong>Door van ons bier te genieten natuurlijk!</strong>],
+        [<strong key={1}>Hoe kan jij Ajpopoli helpen?</strong>],
+        [<strong key={2}>Door van ons bier te genieten natuurlijk!</strong>],
         ["Maar ook nog:"],
-        [<strong>Via peetouderschap:</strong>, ` peetouder worden van een Mayakind kost €21 per maand of €250 per jaar (fiscaal aftrekbaar via Scheut Ontwikkelingssamenwerking). De peetouder krijgt jaarlijks een foto en schoolresultaten van het petekind en kan met haar/hem corresponderen. Ajpopoli zorgt voor de nodige vertalingen uit het Spaans als je wenst.`],
-        [<strong>Via giften:</strong>,` (fiscaal aftrekbaar vanaf €40 per jaar via Scheut Ontwikkelingssamenwerking).`],
+        [<strong key={3}>Via peetouderschap:</strong>, ` peetouder worden van een Mayakind kost €21 per maand of €250 per jaar (fiscaal aftrekbaar via Scheut Ontwikkelingssamenwerking). De peetouder krijgt jaarlijks een foto en schoolresultaten van het petekind en kan met haar/hem corresponderen. Ajpopoli zorgt voor de nodige vertalingen uit het Spaans als je wenst.`],
+        [<strong key={4}>Via giften:</strong>,` (fiscaal aftrekbaar vanaf €40 per jaar via Scheut Ontwikkelingssamenwerking).`],
         ["Wil je meer weten over Ajpopoli en zijn werking, bezoek ", <a href="www.ajpopoli.com">www.ajpopoli.com</a>," en steun ons. Contacteer Piet Vermeersch via Ajpopoli en word peetouder zoals Johan, Kris en Bart."]
     ]
 }
