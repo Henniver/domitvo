@@ -12,10 +12,10 @@ export default function Navbar({links}) {
     ));
 
     return(
-        <nav className="font-sans bg-red flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 h-20 sticky top-0 z-10 text-2xlshadow sm:items-baseline w-full">
+        <nav className="font-sans bg-red flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 h-16 sticky top-0 z-10 text-2xlshadow sm:items-baseline w-full">
             <div className="mb-2 sm:mb-0 flex flex-row">
                 <img 
-                    className="w-24 mr-2 self-center" 
+                    className="w-20 mr-2 self-center" 
                     src={logo}
                     alt="Domitvo-logo"     
                 />

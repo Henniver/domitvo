@@ -11,10 +11,10 @@ export const text = {
     ],
     hoewerkthet: [
         "Je bestelt jouw bak(ken) via de bestelknop hier of elders op de site",
-        "In de bestelling duid je aan of je het bier wil afhalen bij Bart, Johan, kris, Piet of Total Winksele",
+        "In de bestelling duid je aan of je het bier wil afhalen bij Bart, Johan, Kris, Piet of TotalEnergies Winksele",
         "Je krijgt een bevestigingsmail met betaal- en afhaalinstructies",
-        "Zodra je betaald hebt, kan je jouw bier komen afhalen, bij de persoon die je hebt aangeduid in de bestelling",
-        "Heb je voor afhaling in Total Winksele gekozen moet je nog even wachten op de betaalbevestigingsmail",
+        "Zodra je betaald hebt, kan je jouw bier komen afhalen, bij het afhaalpunt (persoon of Total) dat je hebt aangeduid in de bestelling",
+        "Heb je voor afhaling in TotalEnergies Winksele gekozen moet je nog even wachten op de betaalbevestigingsmail",
         "Je drinkt met mate(n)",
         "Het leeggoed (enkel de bak, de lege flesjes zijn voor de glasbak) kan je op dezelfde plaats terugbrengen"
     ],
@@ -25,6 +25,7 @@ export const text = {
         "Nu de coronamaatregelen versoepeld worden en de horecazaken terug opengaan, is “de Oude Markt terug van ons” voor de jeugd. De jeugd is onze toekomst. Ook in Guatemala is dit zo. Steun Ajpopoli (link Steun ons) en drink met maten en met mate."
     ],
     ajpopoli: [
+        ["De opbrengsten van de verkoop van het bier gaat integraal naar vzw Ajpopoli. (hyperlink naar www.ajpopoli.com )"],
         [`Ajpopoli is een Belgische organisatie die kwaliteitsvol onderwijs biedt aan ongeveer 300 kansarme Mayakinderen in het bergdorp San Juan Comalapa in Guatemala. Het doel is hen uit de armoede en onderdrukking te halen via onderwijs en ze een goede basis te geven voor eventuele verdere studies of een betere voorbereiding op de arbeidsmarkt. Er wordt nadruk gelegd op gendergelijkheid. De school wordt geleid door Mayaleerkrachten en biedt ook medische en sociale steun aan de gezinnen van de leerlingen die in armoede leven`],
         [`Ajpopoli zorgt voor de volledige financiering van deze school en haar 24 personeelsleden (ie. lonen, infrastructuur en onderhoud). De school verschaft onderwijs tot en met het derde middelbaar. Via een sociaal fonds biedt de school ook hulp bij noodsituaties in de gezinnen van de leerlingen (ie. medische kosten, voedsel, kleding, schoenen, schoolmateriaal ...).`],
         [<strong>Hoe kan jij Ajpopoli helpen?</strong>],
@@ -39,6 +40,10 @@ export const text = {
 export const navLinks = [
     {
         title: "Het Bier",
+        href: "/",
+    },
+    {
+        title: "Hoe Het Werkt",
         href: "/",
     },
     {

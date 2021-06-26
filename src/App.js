@@ -30,7 +30,7 @@ export default function App() {
                     showBtn={true}
                 />
             </Section>
-            <Section title={"Hoe Werkt Het?"}>
+            <Section title={"Hoe Het Werkt"}>
                 <HoeWerktHet 
                     text={text.hoewerkthet} 
                     img={total}    
