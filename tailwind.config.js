@@ -1,4 +1,5 @@
 // See https://tailwindcss.com/docs/guides/create-react-app
+//REF to deploy on heroku: https://github.com/mars/create-react-app-buildpack#usage
 
 module.exports = {
     purge: {
