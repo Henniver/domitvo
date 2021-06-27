@@ -5,7 +5,7 @@ export default function SectionContent({textSide, text, img, extraClasses, showB
     
 
     const textBox = 
-        <div className="flex flex-col justify-center items-center text-justify w-40vw px-10">
+        <div className="flex flex-col justify-center items-center text-justify w-50vw px-10">
             {
                 text.map( (par, idx) => (
                     <p key={`${par}-${idx}`}>
@@ -16,7 +16,6 @@ export default function SectionContent({textSide, text, img, extraClasses, showB
             {
                 showBtn ? <LinkToBtn href="/bestel" text={"Bestel hier"} /> : null
             }
-       
         </div>
 
     return(
@@ -25,7 +24,7 @@ export default function SectionContent({textSide, text, img, extraClasses, showB
             <img 
                 src={img}
                 alt={text.title}
-                className="rounded-xl w-50vw"
+                className="rounded-xl w-40vw"
             ></img>
             {textSide === "right" ? textBox : null}
         </div>

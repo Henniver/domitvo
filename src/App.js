@@ -16,6 +16,7 @@ import ajpopoli from "./ajpopoli.JPG";
 import ajpopoli2 from "./ajpopoli2.JPG";
 import { text, navLinks } from "./data";
 import BestelFormulier from './components/BestelFormulier';
+import TextBoxBeer from './components/TextBox';
 
 export default function App() {
 
@@ -31,12 +32,15 @@ export default function App() {
                         <Banner text={text.intro} />
                         <main className="container text-center mx-auto my-10vh">
                             <Section title={"Het Bier"}>
-                                <SectionContent 
-                                    textSide={"right"}
-                                    text={text.bier}
-                                    img={het_bier}
-                                    showBtn={true}
-                                />
+                                <div className={`flex flex-row justify-between`}>
+                                    <img 
+                                        src={het_bier}
+                                        alt={text.title}
+                                        className="rounded-xl w-40vw"
+                                    >
+                                    </img>
+                                    <TextBoxBeer text={text.bier} showBtn={true} />
+                                </div>
                             </Section>
                             <Section title={"Hoe Het Werkt"}>
                                 <HoeWerktHet 
