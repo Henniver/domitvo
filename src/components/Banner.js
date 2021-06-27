@@ -1,4 +1,3 @@
-import Button from "./Button";
 import banner from "../banner.jpg";
 import LinkToBtn from "./LinkToBtn";
 
@@ -22,7 +21,7 @@ export default function Banner({text, handleShowModal}) {
                 }
             </div>
             <LinkToBtn href={"/"} text={"Lees Meer"}/>
-            <Button text={"Bestel hier"} btnOnClick={handleShowModal} />
+            <LinkToBtn href="bestel" text={"Bestel hier"} />
         </div>
     </div>
 

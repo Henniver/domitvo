@@ -94,7 +94,7 @@ export default function BestelFormulier() {
                     className="block text-gray-700 text-sm font-bold mb-2"
                     htmlFor="price"
                 >
-                    Prijs
+                    Prijs (incl. leeggoed t.w.v. €10 per krat)
                 </label>
                 <input
                     className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
@@ -137,8 +137,15 @@ export default function BestelFormulier() {
                     id="remarks"
                     onChange={setValue("remarks")}
                     value={state.remarks}
-                    placeholder="Typ hier eventuele bijkomende opmerkingen"
+                    rows={4}
                 ></textarea>
+            </div>
+            <div className="m-4 flex justify-center">
+                <input
+                    className=" bg-gold cursor-pointer text-white py-3 text-lg px-6 rounded-full transform hover:scale-110 filter hover:brightness-125 transition duration-300 ease-in-out"
+                    type="submit"
+                    value="Verzend bestelling"
+                />
             </div>
         </form>
     );

@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button";
+import LinkToBtn from "./LinkToBtn";
 
 export default function SectionContent({textSide, text, img, extraClasses, showBtn, handleShowModal}) {
     
@@ -14,8 +14,7 @@ export default function SectionContent({textSide, text, img, extraClasses, showB
                 ))
             }
             {
-                showBtn ? <Button btnOnClick={handleShowModal} text={"Bestel hier"}></Button> : null
-
+                showBtn ? <LinkToBtn href="/bestel" text={"Bestel hier"} /> : null
             }
        
         </div>
