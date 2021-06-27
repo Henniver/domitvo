@@ -30,13 +30,13 @@ export default function App() {
                 >
                         <Navbar links={navLinks}/>
                         <Banner text={text.intro} />
-                        <main className="container text-center mx-auto my-10vh">
+                        <main className="container flex flex-col items-center text-center mx-auto border-2 border-solid border-black">
                             <Section title={"Het Bier"}>
                                 <div className={`flex flex-row justify-between`}>
                                     <img 
                                         src={het_bier}
                                         alt={text.title}
-                                        className="rounded-xl w-40vw"
+                                        className="rounded-xl w-40vw max-w-50"
                                     >
                                     </img>
                                     <TextBoxBeer text={text.bier} showBtn={true} />
@@ -61,15 +61,15 @@ export default function App() {
                                     img={ons_verhaal2}
                                 />
                             </Section>
+                            <Section title="Steun Ons">
+                                <SteunOns
+                                    text={text.ajpopoli}
+                                    img1={ajpopoli}
+                                    img2={ajpopoli2}
+                                    title={"Ajpopoli"}
+                                />
+                            </Section>
                         </main>
-                        <Section title="Steun Ons">
-                            <SteunOns
-                                text={text.ajpopoli}
-                                img1={ajpopoli}
-                                img2={ajpopoli2}
-                                title={"Ajpopoli"}
-                            />
-                        </Section>
                         <Footer />
                 </Route>
                 <Route

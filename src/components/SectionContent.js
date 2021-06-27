@@ -5,7 +5,7 @@ export default function SectionContent({textSide, text, img, extraClasses, showB
     
 
     const textBox = 
-        <div className="flex flex-col justify-center items-center text-justify w-50vw px-10">
+        <div className="flex flex-col justify-center items-center text-justify w-50vw px-5 border-2 border-solid border-black">
             {
                 text.map( (par, idx) => (
                     <p key={`${par}-${idx}`}>
@@ -19,12 +19,12 @@ export default function SectionContent({textSide, text, img, extraClasses, showB
         </div>
 
     return(
-        <div className={`flex flex-row justify-between ${extraClasses}`}>
+        <div className={`flex flex-row justify-between border-2 border-solid border-red${extraClasses}`}>
             {textSide === "left" ? textBox : null}
             <img 
                 src={img}
                 alt={text.title}
-                className="rounded-xl w-40vw"
+                className="rounded-xl w-40vw max-w-50"
             ></img>
             {textSide === "right" ? textBox : null}
         </div>

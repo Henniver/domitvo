@@ -46,7 +46,7 @@ Bart, Johan, Kris, Piet en de kinderen van Ajpopoli.`);
 
     return(
         <form 
-            className="bg-white text-left mb-4 max-w-md mx-auto"
+            className="bg-white text-left mb-4 max-w-2xl mx-auto"
             // onSubmit={handleSubmit}
             action="https://formsubmit.co/a818ae18f7f0497d0332703cbf54981f" 
             method="POST"
