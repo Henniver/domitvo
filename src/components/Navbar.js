@@ -1,9 +1,21 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import logo from "../logo_klein.jpg";
 
-export default function Navbar({links}) {
+export default function Navbar({links, back}) {
+    
+    const navAnchors = links.map( l =>(
+        <AnchorLink 
+            href={`${l.href}`} 
+            className="text-md no-underline text-white text-lg hover:text-gold hover:brightness-125 ml-5 px-1"
+            key={l.title}
+        >
+            {`${l.title}`}
+        </AnchorLink>
+    ));
+
     const navLinks = links.map( l =>(
         <a 
-            href={`${l.href}`} 
+            href={`/${l.href}`} 
             className="text-md no-underline text-white text-lg hover:text-gold hover:brightness-125 ml-5 px-1"
             key={l.title}
         >
@@ -21,7 +33,8 @@ export default function Navbar({links}) {
                 />
             </div>
             <div className="sm:mb-0 self-center">
-                {navLinks}
+                {back ? navLinks : navAnchors}
+                { back ? <a href="/" className="text-md no-underline text-white text-lg hover:text-gold hover:brightness-125 ml-5 px-1">Terug</a> : null}
             </div>
         </nav>
     )

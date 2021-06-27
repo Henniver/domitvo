@@ -40,23 +40,23 @@ export const text = {
 export const navLinks = [
     {
         title: "Het Bier",
-        href: "/",
+        href: `#Het Bier`,
     },
     {
         title: "Hoe Het Werkt",
-        href: "/",
+        href: `#Hoe Het Werkt`,
     },
     {
         title: "Ons Verhaal",
-        href: "/",
+        href: `#Ons Verhaal`,
     },
     {
         title: "Steun Ons",
-        href: "/",
+        href: `#Steun Ons`,
     },
     {
         title: "Contact",
-        href: "/",
+        href: `#Contact`,
     },
 ];
 

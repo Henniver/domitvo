@@ -73,9 +73,10 @@ export default function App() {
                         <Footer />
                 </Route>
                 <Route
-                    path="/bestel"    
+                    exact
+                    path={`/bestel`} 
                 >
-                    <Navbar links={[{title: "Terug", href: "/"}]}/>
+                    <Navbar links={navLinks} back={true} />
                     <main className="container text-center mx-auto my-5vh h-screen">
                         <section className="flex flex-col justify-center mx-5vw">
                             <h1>Bestel</h1>

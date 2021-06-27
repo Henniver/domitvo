@@ -1,3 +1,4 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import banner from "../banner.jpg";
 import LinkToBtn from "./LinkToBtn";
 
@@ -20,8 +21,13 @@ export default function Banner({text, handleShowModal}) {
                     ))
                 }
             </div>
-            <LinkToBtn href={"/"} text={"Lees Meer"}/>
-            <LinkToBtn href="bestel" text={"Bestel hier"} />
+            <AnchorLink 
+                className="bg-gold text-white py-3 text-lg px-6 mr-6 rounded-full transform hover:scale-110 filter hover:brightness-125 transition duration-300 ease-in-out" 
+                href={"#Het Bier"} 
+            >
+                Lees Meer
+            </AnchorLink>
+            <LinkToBtn href={`${process.env.PUBLIC_URL}/bestel`} text={"Bestel hier"} />
         </div>
     </div>
 

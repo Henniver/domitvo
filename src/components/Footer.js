@@ -34,7 +34,7 @@ export default function Footer() {
     return(
     <footer className="bg-gold flex flex-col items=center text-white justify-between h-auto px-12 py-3">
         <div>
-            <h1>Contact</h1>
+            <h1 id="Contact">Contact</h1>
             <p>domitvo@outlook.com</p>
             <p>DOMITVO - BE26 0637 0978 7229</p>
         </div>

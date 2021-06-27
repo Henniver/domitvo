@@ -24,7 +24,7 @@ export default function SteunOns({text, img1, img2, title}) {
                     }
                 </div>
             </div>
-            <div className={`flex flex-row justify-center`} key={"subsection-2"}>
+            <div className={`flex flex-row justify-center mb-16`} key={"subsection-2"}>
                 <div className="flex flex-col justify-center items-center text-justify w-40vw px-10">
                     {
                         text.slice(3,-1).map( (par, idx) => (
