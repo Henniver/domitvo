@@ -1,7 +1,8 @@
 import Button from "./Button";
 import banner from "../banner.jpg";
+import LinkToBtn from "./LinkToBtn";
 
-export default function Banner({text}) {
+export default function Banner({text, handleShowModal}) {
     return(
     <div className="banner bg-cover bg-top flex justify-center items-start" 
         style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(${banner})`}}
@@ -20,8 +21,8 @@ export default function Banner({text}) {
                     ))
                 }
             </div>
-            <Button href={"/"} text={"Lees Meer"}/>
-            <Button href={"/"} text={"Bestel hier"}/>
+            <LinkToBtn href={"/"} text={"Lees Meer"}/>
+            <Button text={"Bestel hier"} btnOnClick={handleShowModal} />
         </div>
     </div>
 

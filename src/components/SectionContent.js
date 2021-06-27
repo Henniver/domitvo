@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-export default function SectionContent({textSide, text, img, extraClasses, showBtn}) {
+export default function SectionContent({textSide, text, img, extraClasses, showBtn, handleShowModal}) {
     
 
     const textBox = 
@@ -14,7 +14,7 @@ export default function SectionContent({textSide, text, img, extraClasses, showB
                 ))
             }
             {
-                showBtn ? <Button href={"/"} text={"Bestel hier"}></Button> : null
+                showBtn ? <Button btnOnClick={handleShowModal} text={"Bestel hier"}></Button> : null
 
             }
        

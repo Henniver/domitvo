@@ -1,10 +1,10 @@
-export default function Button({href, text}) {
+export default function Button({text, btnOnClick}) {
     return(
-        <a 
-            href={href}
+        <button 
             className=" bg-gold text-white py-3 text-lg px-6 mr-6 rounded-full transform hover:scale-110 filter hover:brightness-125 transition duration-300 ease-in-out"            
+            onClick={btnOnClick}
         > 
-        {text}
-        </a>
+            {text}
+        </button>
     )
 };
