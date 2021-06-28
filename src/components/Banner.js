@@ -22,12 +22,15 @@ export default function Banner({text, handleShowModal}) {
                     ))
                 }
             </div>
-            <AnchorLink 
-                className="bg-gold text-white py-3 text-lg px-6 mr-6 rounded-full transform hover:scale-110 filter hover:brightness-125 transition duration-300 ease-in-out" 
-                href={"#Het Bier"} 
+            <button
+                className="bg-gold text-white py-3 text-lg px-6 mr-6 rounded-full transform hover:scale-110 filter hover:brightness-125 transition duration-300 ease-in-out"
             >
-                Lees Meer
-            </AnchorLink>
+                <AnchorLink 
+                    href={"#Het Bier"} 
+                >
+                    Lees Meer
+                </AnchorLink>
+            </button>
             <LinkToBtn href={`${process.env.PUBLIC_URL}/bestel`} text={"Bestel hier"} />
         </div>
         <img 

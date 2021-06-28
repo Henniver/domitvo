@@ -1,37 +1,36 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircle } from "@fortawesome/free-solid-svg-icons";
-import {
-  faLinkedinIn,
-  faFacebookF,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-import logo from "../logo_klein.jpg";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCircle } from "@fortawesome/free-solid-svg-icons";
+// import {
+//   faLinkedinIn,
+//   faFacebookF,
+//   faInstagram,
+// } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
 
-    const fontawesomeCodes = [
-    { code: faLinkedinIn, url: "/link/linkedin" },
-    { code: faFacebookF, url: "/link/facebook" },
-    { code: faInstagram, url: "/link/instagram" },
-    ];
+    // const fontawesomeCodes = [
+    // { code: faLinkedinIn, url: "/link/linkedin" },
+    // { code: faFacebookF, url: "/link/facebook" },
+    // { code: faInstagram, url: "/link/instagram" },
+    // ];
 
-    const socialMediaIcons = fontawesomeCodes.map((object, idx) => (
-        <a 
-            href={object.url} 
-            key={idx} target="_blank" 
-            rel="noreferrer"
-            className="hover:opacity-50"
-        >
-            <span className="fa-layers fa-fw fa-3x">
-                <FontAwesomeIcon icon={faCircle} style={{ color: "#A41912" }} />
-                <FontAwesomeIcon
-                icon={object.code}
-                style={{ color: "white"}}
-                transform={"shrink-7"}
-                />
-            </span>
-        </a>
-    ));
+    // const socialMediaIcons = fontawesomeCodes.map((object, idx) => (
+    //     <a 
+    //         href={object.url} 
+    //         key={idx} target="_blank" 
+    //         rel="noreferrer"
+    //         className="hover:opacity-50"
+    //     >
+    //         <span className="fa-layers fa-fw fa-3x">
+    //             <FontAwesomeIcon icon={faCircle} style={{ color: "#A41912" }} />
+    //             <FontAwesomeIcon
+    //             icon={object.code}
+    //             style={{ color: "white"}}
+    //             transform={"shrink-7"}
+    //             />
+    //         </span>
+    //     </a>
+    // ));
     return(
     <footer className="bg-gold flex justify-center items-center text-white h-auto px-12 py-3">
         <div className="flex flex-col items-center sm:mr-16">
