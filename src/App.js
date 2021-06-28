@@ -57,7 +57,7 @@ export default function App() {
                                     textSide={"right"}
                                     text={text.verhaal.slice(0,2)} 
                                     img={ons_verhaal1}
-                                    extraClasses={"mb-10vh"}
+                                    extraClasses={"mb-5vh"}
                                 />
                                 <SectionContent 
                                     textSide={"left"} 

@@ -5,7 +5,7 @@ export default function SectionContent({textSide, text, img, extraClasses, showB
     
 
     const textBox = 
-        <div className="flex flex-col justify-center items-center text-justify w-50vw px-5">
+        <div className={`flex flex-col justify-center items-center text-justify w-50vw ${textSide === "right" ? "pl-10" : "pr-10"}`}>
             {
                 text.map( (par, idx) => (
                     <p key={`${par}-${idx}`}>

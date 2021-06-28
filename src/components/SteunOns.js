@@ -10,7 +10,7 @@ export default function SteunOns({text, img1, img2, title}) {
                     className="rounded-xl w-50vw max-w-50"
                     key={"ajpopoli-img-1"}
                 ></img>
-                <div className="flex flex-col justify-center items-center text-justify w-40vw px-10">
+                <div className="flex flex-col justify-center items-center text-justify w-40vw pl-10">
                     <p className="my-2">De opbrengsten van de verkoop van het bier gaat integraal naar <a className="text-gold" href="www.ajpopoli.com">vzw Ajpopoli</a>.</p>
                     {
                         text.slice(1,3).map( (par, idx) => (
@@ -25,7 +25,7 @@ export default function SteunOns({text, img1, img2, title}) {
                 </div>
             </div>
             <div className={`flex flex-row justify-center mb-16`} key={"subsection-2"}>
-                <div className="flex flex-col justify-center items-center text-justify w-40vw px-10">
+                <div className="flex flex-col justify-center items-center text-justify w-40vw pr-10">
                     {
                         text.slice(3,-1).map( (par, idx) => (
                             <p
