@@ -6,7 +6,7 @@ export default function HoeWerktHet({text, img}) {
            <ol className="flex flex-col text-left h-70vh">
                 {
                     text.slice(0,4).map( (par, idx) => (
-                        <li key={par.slice(0,4)} className="flex items-center px-3  h-1/4">
+                        <li key={par.slice(0,4)} className="flex items-center px-3 h-1/4">
                             <div className="h-12 w-12 mx-3 rounded-full bg-gold text-white flex justify-center items-center text-xl">
                                 <p className="text-xl">{idx + 1}</p>
                             </div>

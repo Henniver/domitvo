@@ -5,6 +5,7 @@ import {
   faFacebookF,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import logo from "../logo_klein.jpg";
 
 export default function Footer() {
 
@@ -32,14 +33,16 @@ export default function Footer() {
         </a>
     ));
     return(
-    <footer className="bg-gold flex flex-col items=center text-white justify-between h-auto px-12 py-3">
-        <div>
-            <h1 id="Contact">Contact</h1>
-            <p>domitvo@outlook.com</p>
-            <p>DOMITVO - BE26 0637 0978 7229</p>
-        </div>
-        <div className="flex justify-center items-center mt-3">
-            {socialMediaIcons}
+    <footer className="bg-gold flex justify-center items-center text-white h-auto px-12 py-3">
+        <div className="flex flex-col items-center sm:mr-16">
+            <div>
+                <h1 id="Contact">Contact</h1>
+                <p>domitvo@outlook.com</p>
+                <p>DOMITVO - BE26 0637 0978 7229</p>
+            </div>
+            {/* <div className="flex justify-center items-center mt-3">
+                {socialMediaIcons}
+            </div> */}
         </div>
     </footer>
 

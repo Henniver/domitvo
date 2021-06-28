@@ -2,7 +2,7 @@ import LinkToBtn from "./LinkToBtn";
 
 export default function TextBoxBeer({text, showBtn}) {
     return(
-        <div className="flex flex-col justify-center items-center text-justify w-50vw px-5 border-2 border-solid border-black">
+        <div className="flex flex-col justify-center items-center text-justify w-50vw px-5">
             {
                 text.map( (par, idx) => (
                     <p key={`${par}-${idx}`}>

@@ -30,7 +30,7 @@ export default function App() {
                 >
                         <Navbar links={navLinks}/>
                         <Banner text={text.intro} />
-                        <main className="container flex flex-col items-center text-center mx-auto border-2 border-solid border-black">
+                        <main className="container flex flex-col items-center text-center mx-auto">
                             <Section title={"Het Bier"}>
                                 <div className={`flex flex-row justify-between`}>
                                     <img 
@@ -77,7 +77,7 @@ export default function App() {
                     path={`/bestel`} 
                 >
                     <Navbar links={navLinks} back={true} />
-                    <main className="container text-center mx-auto my-5vh h-screen">
+                    <main className="container text-center mx-auto my-5vh h-auto">
                         <section className="flex flex-col justify-center mx-5vw">
                             <h1>Bestel</h1>
                             <div>

@@ -1,10 +1,11 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import banner from "../banner.jpg";
 import LinkToBtn from "./LinkToBtn";
+import logo from "../logo_klein.jpg";
 
 export default function Banner({text, handleShowModal}) {
     return(
-    <div className="banner bg-cover bg-top flex justify-center items-start" 
+    <div className="banner bg-cover bg-top flex justify-center items-start relative" 
         style={{backgroundImage: `linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(${banner})`}}
     >
         <div className="container text-left px-5vw py-15vh">
@@ -29,6 +30,11 @@ export default function Banner({text, handleShowModal}) {
             </AnchorLink>
             <LinkToBtn href={`${process.env.PUBLIC_URL}/bestel`} text={"Bestel hier"} />
         </div>
+        <img 
+            className="w-20vw self-center absolute bottom-0 right-0 opacity-90" 
+            src={logo}
+            alt="Domitvo-logo"     
+        />
     </div>
 
     )
