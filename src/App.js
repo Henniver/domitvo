@@ -23,10 +23,10 @@ export default function App() {
     return (
         <Router>
         <div className="App">
-        <div className="bg-red h-screen w-screen z-50 fixed lg:hidden flex flex-col justify-center p-10 items-center text-gold">
+        {/* <div className="bg-red h-screen w-screen z-50 fixed lg:hidden flex flex-col justify-center p-10 items-center text-gold">
             <h1>Work in progress... ⚒</h1>
             <p>Bestel binnenkort je domitvo tripel ook op je mobiel toestel</p>
-        </div>
+        </div> */}
             <Switch>
                 <Route
                     exact

@@ -6,6 +6,7 @@ export default function BestelFormulier() {
         firstName: "",
         lastName: "",
         email: "",
+        phoneNumber: "",
         nrOfCrates: "",
         pickUpLocation: "",
         remarks: "",
@@ -46,120 +47,138 @@ Bart, Johan, Kris, Piet en de kinderen van Ajpopoli.`);
 
     return(
         <form 
-            className="bg-white text-left mb-4 max-w-2xl mx-auto"
+            className="bg-white text-left my-4 max-w-3xl mx-auto"
             // onSubmit={handleSubmit}
             action="https://formsubmit.co/a818ae18f7f0497d0332703cbf54981f" 
             method="POST"
         >
-            <div className="m-4">
-                <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="firstName"
-                >
-                    Voornaam
-                </label>
-                <input
-                    className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-                    type="text"
-                    name="Voornaam"
-                    id="firstName"
-                    onChange={setValue("firstName")}
-                    value={state.firstName}
-                    required
-                />
+            <div className="grid grid-cols-6 gap-6">
+                <div className="col-span-6 sm:col-span-3">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="firstName"
+                    >
+                        Voornaam*
+                    </label>
+                    <input
+                        className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                        type="text"
+                        name="Voornaam"
+                        id="firstName"
+                        onChange={setValue("firstName")}
+                        value={state.firstName}
+                        required
+                    />
+                </div>
+                <div className="col-span-6 sm:col-span-3">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="lastName"
+                    >
+                        Achternaam*
+                    </label>
+                    <input
+                        className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                        type="text"
+                        name="Achternaam"
+                        id="lastName"
+                        onChange={setValue("lastName")}
+                        value={state.lastName}
+                        required
+                    />
+                </div>
+                <div className="col-span-6 sm:col-span-4">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="email"
+                    >
+                        Email Adres*
+                    </label>
+                    <input
+                        className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                        type="email"
+                        name="email"
+                        id="email"
+                        onChange={setValue("email")}
+                        value={state.email}
+                        required
+                    />
+                </div>
+                <div className="col-span-6 sm:col-span-2">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="gsm"
+                    >
+                        GSM
+                    </label>
+                    <input
+                        className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                        type="text"
+                        name="GSM Nummer"
+                        id="phoneNumber"
+                        onChange={setValue("phoneNumber")}
+                        value={state.phoneNumber}
+                    />
+                </div>
+                <div className="col-span-6 sm:col-span-2">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="nrOfCrates"
+                    >
+                        Aantal bakken*
+                    </label>
+                    <input
+                        className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                        type="number"
+                        min={0}
+                        name="Aantal Bakken"
+                        id="nrOfCrates"
+                        onChange={setValue("nrOfCrates")}
+                        value={state.nrOfCrates}
+                        required
+                    />
+                </div>
+                <div className="col-span-6 sm:col-span-2">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="price"
+                    >
+                        Prijs (incl. statiegeld )
+                    </label>
+                    <input
+                        className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
+                        type="text"
+                        name="Totale prijs (incl. leeggoed)"
+                        id="price"
+                        value={`€ ${totalPrice || 0}` }
+                        disabled
+                    />
+                </div>
+                <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+                    <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="pickUpLocation"
+                    >
+                        Afhaalkeuze*
+                    </label>
+                    <select
+                        className=" bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 form-select block w-full mt-1 leading-normal"
+                        name="Afhaalkeuze"
+                        id="pickUpLocation"
+                        value={state.pickUpLocation}
+                        onChange={setValue("pickUpLocation")}
+                        required
+                    >
+                        <option value="">-Maak uw keuze-</option>
+                        <option value="Bart">via Bart</option>
+                        <option value="Piet">via Piet</option>
+                        <option value="Kris">via Kris</option>
+                        <option value="Johan">via Johan</option>
+                        <option value="TotalEnergies Winksele">TotalEnergies Winksele</option>
+                    </select>
+                </div>
             </div>
-            <div className="m-4">
-                <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="lastName"
-                >
-                    Achternaam
-                </label>
-                <input
-                    className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-                    type="text"
-                    name="Achternaam"
-                    id="lastName"
-                    onChange={setValue("lastName")}
-                    value={state.lastName}
-                    required
-                />
-            </div>
-            <div className="m-4">
-                <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="email"
-                >
-                    Email Adres
-                </label>
-                <input
-                    className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-                    type="email"
-                    name="email"
-                    id="email"
-                    onChange={setValue("email")}
-                    value={state.email}
-                    required
-                />
-            </div>
-            <div className="m-4">
-                <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="nrOfCrates"
-                >
-                    Aantal bakken
-                </label>
-                <input
-                    className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-                    type="number"
-                    min={0}
-                    name="Aantal Bakken"
-                    id="nrOfCrates"
-                    onChange={setValue("nrOfCrates")}
-                    value={state.nrOfCrates}
-                    required
-                />
-            </div>
-            <div className="m-4">
-                <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="price"
-                >
-                    Prijs (incl. leeggoed t.w.v. €10 per krat)
-                </label>
-                <input
-                    className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
-                    type="text"
-                    name="Totale prijs (incl. leeggoed)"
-                    id="price"
-                    value={`€ ${totalPrice || 0}` }
-                    disabled
-                />
-            </div>
-            <div className="m-4">
-                <label
-                    className="block text-gray-700 text-sm font-bold mb-2"
-                    htmlFor="pickUpLocation"
-                >
-                    Afhaalkeuze
-                </label>
-                <select
-                    className=" bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 form-select block w-full mt-1 leading-normal"
-                    name="Afhaalkeuze"
-                    id="pickUpLocation"
-                    value={state.pickUpLocation}
-                    onChange={setValue("pickUpLocation")}
-                    required
-                >
-                    <option value="">-Maak uw keuze-</option>
-                    <option value="Bart">via Bart</option>
-                    <option value="Piet">via Piet</option>
-                    <option value="Kris">via Kris</option>
-                    <option value="Johan">via Johan</option>
-                    <option value="TotalEnergies Winksele">TotalEnergies Winksele</option>
-                </select>
-            </div>
-            <div className="m-4">
+            <div className="my-4">
                 <label
                     className="block text-gray-700 text-sm font-bold mb-2"
                     htmlFor="remarks"
@@ -176,16 +195,16 @@ Bart, Johan, Kris, Piet en de kinderen van Ajpopoli.`);
                 ></textarea>
             </div>
             <div className="m-4 flex flex-col justify-center items-center">
-                <input
-                    className=" bg-gold cursor-pointer text-white py-3 text-lg px-6 rounded-full transform hover:scale-110 filter hover:brightness-125 transition duration-300 ease-in-out"
-                    type="submit"
-                    value="Verzend bestelling"
-                />
                 <span>
                     <p className="text-xs text-red">
                     kijk uw gegevens goed na alvorens op verzenden te clicken
                     </p>
                 </span>
+                <input
+                    className=" bg-gold cursor-pointer text-white py-3 text-lg px-6 rounded-full transform hover:scale-110 filter hover:brightness-125 transition duration-300 ease-in-out"
+                    type="submit"
+                    value="Verzend bestelling"
+                />
             </div>
             <input type="hidden" name="_subject" value="Nieuwe bestelling!"></input>
             <input type="hidden" name="_autoresponse" value={confirmationMessage}></input>
