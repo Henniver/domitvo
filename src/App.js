@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from './components/NavTailwind';
+import Navbar from './components/Navbar.js';
 import Banner from './components/Banner';
 import Section from './components/Section';
 import SectionContent from './components/SectionContent';
@@ -28,52 +28,51 @@ export default function App() {
                     exact
                     path="/"
                 >
-                        {/* <Navbar links={navLinks}/> */}
-                        <span id="top"></span> {/* dummy element for navigation */}
-                        <Navbar links={navLinks} />
-                        <Banner text={text.intro} />
-                        <main className="container flex flex-col items-center text-center mx-auto">
-                            <Section title={"Het Bier"}>
-                                <div className={`flex flex-col lg:flex-row justify-between`}>
-                                    <img 
-                                        src={het_bier}
-                                        alt={text.title}
-                                        className="rounded-xl w-full lg:w-40vw lg:max-w-50 my-4 lg:my-0"
-                                    >
-                                    </img>
-                                    <TextBoxBeer text={text.bier} showBtn={true} />
-                                </div>
-                            </Section>
-                            <Section title={"Hoe Het Werkt"}>
-                                <HoeWerktHet 
-                                    text={text.hoewerkthet} 
-                                    img={total}    
-                                />
-                            </Section>
-                            <Section title={"Ons Verhaal"}>
-                                <SectionContent 
-                                    textSide={"right"}
-                                    text={text.verhaal.slice(0,2)} 
-                                    img={ons_verhaal1}
-                                    extraClasses={"lg:mb-5vh"}
-                                />
-                                <SectionContent 
-                                    textSide={"left"} 
-                                    text={text.verhaal.slice(2,3)} 
-                                    img={ons_verhaal2}
-                                    part2={true}
-                                />
-                            </Section>
-                            <Section title="Steun Ons">
-                                <SteunOns
-                                    text={text.ajpopoli}
-                                    img1={ajpopoli}
-                                    img2={ajpopoli2}
-                                    title={"Ajpopoli"}
-                                />
-                            </Section>
-                        </main>
-                        <Footer />
+                    <span id="top"></span> {/* dummy element for navigation */}
+                    <Navbar links={navLinks} />
+                    <Banner text={text.intro} />
+                    <main className="container flex flex-col items-center text-center mx-auto">
+                        <Section title={"Het Bier"}>
+                            <div className={`flex flex-col lg:flex-row justify-between`}>
+                                <img 
+                                    src={het_bier}
+                                    alt={text.title}
+                                    className="rounded-xl w-full lg:w-40vw lg:max-w-50 my-4 lg:my-0"
+                                >
+                                </img>
+                                <TextBoxBeer text={text.bier} showBtn={true} />
+                            </div>
+                        </Section>
+                        <Section title={"Hoe Het Werkt"}>
+                            <HoeWerktHet 
+                                text={text.hoewerkthet} 
+                                img={total}    
+                            />
+                        </Section>
+                        <Section title={"Ons Verhaal"}>
+                            <SectionContent 
+                                textSide={"right"}
+                                text={text.verhaal.slice(0,2)} 
+                                img={ons_verhaal1}
+                                extraClasses={"lg:mb-5vh"}
+                            />
+                            <SectionContent 
+                                textSide={"left"} 
+                                text={text.verhaal.slice(2,3)} 
+                                img={ons_verhaal2}
+                                part2={true}
+                            />
+                        </Section>
+                        <Section title="Steun Ons">
+                            <SteunOns
+                                text={text.ajpopoli}
+                                img1={ajpopoli}
+                                img2={ajpopoli2}
+                                title={"Ajpopoli"}
+                            />
+                        </Section>
+                    </main>
+                    <Footer />
                 </Route>
                 <Route
                     exact
