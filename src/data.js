@@ -10,19 +10,19 @@ export const text = {
         "\"D’Oude Markt is terug van ons\" zit in prachtige oude houten kratjes van 12 flessen (33 cl). Leuk om te geven maar nog leuker om te krijgen (of jezelf cadeau te doen). Uiteraard smaakt ons bier het beste in goed gezelschap.",
     ],
     hoewerkthet: [
-        "Je bestelt jouw bak(ken) via de bestelknop hier of elders op de site",
-        "In de bestelling duid je aan of je het bier wil afhalen bij Bart, Johan, Kris, Piet of TotalEnergies Winksele",
-        "Je krijgt een bevestigingsmail met betaal- en afhaalinstructies",
-        "Zodra je betaald hebt, kan je jouw bier komen afhalen, bij het afhaalpunt (persoon of Total) dat je hebt aangeduid in de bestelling",
-        "Heb je voor afhaling in TotalEnergies Winksele gekozen moet je nog even wachten op de betaalbevestigingsmail",
-        "Je drinkt met mate(n)",
-        "Het leeggoed (enkel de bak, de lege flesjes zijn voor de glasbak) kan je op dezelfde plaats terugbrengen"
+        "Je bestelt jouw bak(ken) via de bestelknop hier of elders op de site.",
+        "In de bestelling duid je aan of je het bier wil afhalen bij Bart, Johan, Kris, Piet of TotalEnergies Winksele.",
+        "Je krijgt een bevestigingsmail met betaal- en afhaalinstructies (bankrekeningnummer: BE26 0637 0978 7229).",
+        "Zodra je betaald hebt, kan je jouw bier komen afhalen, bij het afhaalpunt (persoon of Total) dat je hebt aangeduid in de bestelling.",
+        "Heb je voor afhaling in TotalEnergies Winksele gekozen moet je nog even wachten op de betaalbevestigingsmail.",
+        "Je drinkt met mate(n).",
+        "Het leeggoed (enkel de bak, de lege flesjes zijn voor de glasbak) kan je op dezelfde plaats terugbrengen."
     ],
     verhaal: [
         "Het voorbije jaar gebeurde het ondenkbare: de horeca moest de deuren sluiten en we konden elkaar alleen buiten ontmoeten met 1,5 m afstand.",
         "Vier vrienden maakten van de nood een deugd. Ze sprongen op de fiets met enkele lekkere streekbieren in de rugzak en kwamen wekelijks op zaterdagmiddag samen op de Oude Markt van Leuven. Met de sluiting van de horeca was de jeugd er niet meer, er zaten geen toeristen, geen studenten …. Met andere woorden, de vier vrienden waren er quasi alleen en eisten dus d’Oude Markt op. “Ze was terug van ons”. Al zijn we blij dat ze nu vanaf juni 2021 weer van iedereen is.",
         "‘D’Oude Markt is terug van ons’ is een verwijzing naar de periode waarbij we het allemaal moeilijk hadden. Een periode waarbij de scholen ook plots gesloten waren. Ook in Guatemala. Het idee werd begin dit jaar geopperd om zelf een bier op de markt te brengen ten voordele van de Ajpopoli organisatie.",
-        "Nu de coronamaatregelen versoepeld worden en de horecazaken terug opengaan, is “de Oude Markt terug van ons” voor de jeugd. De jeugd is onze toekomst. Ook in Guatemala is dit zo. Steun Ajpopoli (link Steun ons) en drink met maten en met mate."
+        "Nu de coronamaatregelen versoepeld worden en de horecazaken terug opengaan, is “de Oude Markt terug van ons” voor de jeugd. De jeugd is onze toekomst. Ook in Guatemala is dit zo. Steun Ajpopoli en drink met maten en met mate."
     ],
     ajpopoli: [
         ["De opbrengsten van de verkoop van het bier gaat integraal naar vzw Ajpopoli."],
@@ -32,7 +32,7 @@ export const text = {
         [<strong key={2}>Door van ons bier te genieten natuurlijk!</strong>],
         ["Maar ook nog:"],
         [<strong key={3}>Via peetouderschap:</strong>, ` peetouder worden van een Mayakind kost €21 per maand of €250 per jaar (fiscaal aftrekbaar via Scheut Ontwikkelingssamenwerking). De peetouder krijgt jaarlijks een foto en schoolresultaten van het petekind en kan met haar/hem corresponderen. Ajpopoli zorgt voor de nodige vertalingen uit het Spaans als je wenst.`],
-        [<strong key={4}>Via giften:</strong>,` (fiscaal aftrekbaar vanaf €40 per jaar via Scheut Ontwikkelingssamenwerking).`],
+        [<strong key={4}>Via giften</strong>,` (fiscaal aftrekbaar vanaf €40 per jaar via Scheut Ontwikkelingssamenwerking).`],
         ["Wil je meer weten over Ajpopoli en zijn werking, bezoek ", <a href="www.ajpopoli.com">www.ajpopoli.com</a>," en steun ons. Contacteer Piet Vermeersch via Ajpopoli en word peetouder zoals Johan, Kris en Bart."]
     ]
 }

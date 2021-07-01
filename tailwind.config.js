@@ -60,6 +60,8 @@ module.exports = {
 			},
             padding: {
                 "5vw": "5vw",
+                "5vh": "5vh",
+                "10vh": "10vh",
                 "15vh": "15vh",
             },
             maxWidth: {

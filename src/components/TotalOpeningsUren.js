@@ -1,6 +1,6 @@
 export default function TotalOpeningsuren({img}) {
     return(
-        <div className="flex justify-between bottom-0 right-0 pl-3">  
+        <div className="flex flex-col lg:flex-row relative justify-between bottom-0 right-0 pl-3">  
             <div className="flex flex-col">
                 <p className="m-0"><strong>Adres:</strong> Brusselsesteenweg 23, Winksele</p>
                 <table>
@@ -26,7 +26,7 @@ export default function TotalOpeningsuren({img}) {
             <img
                 src={img}
                 alt="total energies"
-                className="w-48"
+                className=" absolute bottom-0 right-0 lg:relative w-20 h-auto mt-4 md:w-48"
             />  
         </div>
     )
