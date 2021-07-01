@@ -28,7 +28,7 @@ export default function Navbar({ links, back}) {
         </a>
     ));
 
-    const backLink = <a href="/" className={`text-md no-underline text-white text-lg hover:text-gold hover:brightness-125 ${navbarOpen ? null : "ml-5"} px-1`}>Terug</a>;
+    const backLink = <a href="/" key="link-back" className={`text-md no-underline text-white text-lg hover:text-gold hover:brightness-125 ${navbarOpen ? null : "ml-5"} px-1`}>Terug</a>;
 
 
     return (
