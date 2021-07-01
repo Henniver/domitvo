@@ -33,7 +33,7 @@ export default function Footer() {
     // ));
     return(
     <footer className="bg-gold flex justify-center items-center text-white h-auto px-12 py-3">
-        <div className="flex flex-col items-center sm:mr-16">
+        <div className="flex flex-col items-center">
             <div>
                 <h1 id="Contact">Contact</h1>
                 <p>domitvo@outlook.com</p>
