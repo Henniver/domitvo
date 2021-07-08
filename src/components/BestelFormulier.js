@@ -48,8 +48,7 @@ Bart, Johan, Kris, Piet en de kinderen van Ajpopoli.`);
     return(
         <form 
             className="bg-white text-left my-4 max-w-3xl mx-auto"
-            // onSubmit={handleSubmit}
-            action="https://formsubmit.co/a818ae18f7f0497d0332703cbf54981f" 
+            action="https://formsubmit.co/0a15e25e7a0ef99fad3d35dd45ac0ce3" 
             method="POST"
         >
             <div className="grid grid-cols-6 gap-6">
