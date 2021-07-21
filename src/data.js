@@ -11,7 +11,7 @@ export const text = {
     ],
     hoewerkthet: [
         "Je bestelt jouw bak(ken) via de bestelknop hier of elders op de site.",
-        "In de bestelling duid je aan of je het bier wil afhalen bij Bart, Johan, Kris, Piet of TotalEnergies Winksele.",
+        "In de bestelling duid je aan of je het bier wil afhalen bij Bart, Johan, Kris of Piet (enkel voor vrienden of kennissen) of bij TotalEnergies Winksele.",
         "Je krijgt een bevestigingsmail met betaal- en afhaalinstructies (bankrekeningnummer: BE26 0637 0978 7229).",
         "Zodra je betaald hebt, kan je jouw bier komen afhalen, bij het afhaalpunt (persoon of Total) dat je hebt aangeduid in de bestelling.",
         "Heb je voor afhaling in TotalEnergies Winksele gekozen moet je nog even wachten op de betaalbevestigingsmail.",

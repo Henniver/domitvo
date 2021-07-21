@@ -169,10 +169,10 @@ Bart, Johan, Kris, Piet en de kinderen van Ajpopoli.`);
                         required
                     >
                         <option value="">-Maak uw keuze-</option>
-                        <option value="Bart">via Bart</option>
-                        <option value="Piet">via Piet</option>
-                        <option value="Kris">via Kris</option>
-                        <option value="Johan">via Johan</option>
+                        <option value="Bart">via Bart (enkel vrienden of kennissen)</option>
+                        <option value="Piet">via Piet (enkel vrienden of kennissen)</option>
+                        <option value="Kris">via Kris (enkel vrienden of kennissen)</option>
+                        <option value="Johan">via Johan (enkel vrienden of kennissen)</option>
                         <option value="TotalEnergies Winksele">TotalEnergies Winksele</option>
                     </select>
                 </div>
