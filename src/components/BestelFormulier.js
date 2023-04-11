@@ -9,7 +9,7 @@ export default function BestelFormulier() {
     phoneNumber: "",
     nrOfCrates: "",
     nrOfSmallCrates: "",
-    isStudent: false,
+    isStudent: 0,
     pickUpLocation: "",
     remarks: "",
   });
@@ -26,7 +26,8 @@ export default function BestelFormulier() {
   const totalPrice =
     state.nrOfCrates * pricePerCrate +
     state.nrOfSmallCrates *
-      (pricePerSmallCrate - state.isStudent * studentDiscount);
+      pricePerSmallCrate *
+      (1 - state.isStudent * studentDiscount);
 
   const confirmationMessage =
     state.pickUpLocation === "TotalEnergies Winksele"
@@ -145,7 +146,7 @@ Bart, Johan, Kris, Piet en de kinderen van Ajpopoli.`;
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="nrOfSmallCrates"
           >
-            Aantal kleine bakken (4 flesjes)*
+            {"Aantal kleine bakken (4 flesjes)*"}
           </label>
           <input
             className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal"
@@ -163,7 +164,7 @@ Bart, Johan, Kris, Piet en de kinderen van Ajpopoli.`;
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="isStudent"
           >
-            Bent u student?*
+            {"Bent u student (< 25 jaar)?*"}
           </label>
           <select
             className=" bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 form-select block w-full mt-1 leading-normal"
@@ -173,8 +174,8 @@ Bart, Johan, Kris, Piet en de kinderen van Ajpopoli.`;
             onChange={setValue("isStudent")}
             required
           >
-            <option value={false}>Neen</option>
-            <option value={true}>Ja</option>
+            <option value={0}>Neen</option>
+            <option value={1}>Ja</option>
           </select>
         </div>
         <div className="col-span-6 sm:col-span-2">
@@ -193,7 +194,7 @@ Bart, Johan, Kris, Piet en de kinderen van Ajpopoli.`;
             disabled
           />
         </div>
-        <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+        <div className="col-span-6 sm:col-span-3 lg:col-span-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
             htmlFor="pickUpLocation"
